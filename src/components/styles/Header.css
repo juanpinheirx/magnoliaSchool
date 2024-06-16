@@ -1,0 +1,94 @@
+.container1 {
+  max-width: 100%;
+  background-color: #2980b9;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+#um {
+  padding: 1em 0 1em 1em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+#dois {
+  padding: 2em 0 0em 21em;
+}
+
+.container2 {
+  padding-top: 1rem;
+}
+
+.linha {
+  width: 80%;
+  color: #ffffff;
+}
+
+.magnolia {
+  width: 100px;
+  height: 100px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.magnolia:hover {
+  filter: drop-shadow(0 0 3em #ffffff);
+}
+
+@keyframes magnolia-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .magnolia {
+    animation: magnolia-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+  }
+
+  .container1 {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  #um {
+    padding-top: 1rem;
+    margin: 0;
+  }
+
+  #dois {
+    padding: 0;
+    margin: 0;
+  }
+
+  .magnolia {
+    will-change: filter;
+    transition: filter 300ms;
+  }
+
+  .magnolia:hover {
+    filter: drop-shadow(0 0 1em #ffffff);
+  }
+
+
+
+}

@@ -1,0 +1,11 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  background-color: #2C3E50;
+  max-width: 100%;
+  text-align: center;
+}
+
+body {
+  color: #ffffff;
+}
